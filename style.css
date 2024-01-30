@@ -66,7 +66,23 @@ section{
     font-size: 70px;
     font-weight: 900;
     padding: 32px 0;
+    color: #ffffff;
+    animation: flicker 1.5s infinite alternate;
+    text-shadow:
+    0 0 7px #00ffa5,
+    0 0 10px #00ffa5,
+    0 0 21px #00ffa5,
+    0 0 42px #00ffa5
+
 }
+
+@keyframes flicker {
+    
+    24%, 45%, 55% {        
+        text-shadow: none;
+    }    
+  }
+  
 
 .title-secondary{
     font-size: 42px;
