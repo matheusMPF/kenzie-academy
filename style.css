@@ -1,0 +1,223 @@
+/* Reset */
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+/* Configurações */
+
+body{
+    color: #fff;
+    font-family: "JetBrains Mono", sans-serif;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+/* Seções */
+section{
+    padding: 80px;
+}
+
+.highlinghts,
+.calendar{
+    background-color: #00005f;
+}
+
+.content,
+.footer{
+   background-color: #00002a;
+}
+
+.footer{
+    padding: 32px;
+    border-top: 1px solid #808080;
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-right: 1px solid #808080;
+    
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* O espaço entre os elementos é o mesmo */
+    
+}
+
+
+/* Títulos */
+
+.title-main{
+    font-size: 70px;
+    font-weight: 900;
+    padding: 32px 0;
+}
+
+.title-secondary{
+    font-size: 42px;
+    padding: 32px 0;
+}
+
+.title-tertiary{
+    font-size: 31px;
+}
+
+/* Paragráfos de texto */
+
+.paragraph{
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    line-height: 30px; /* Espaçamento entre linhas */
+    padding-bottom: 32px;
+}
+
+.paragraph-little{
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+}
+
+.text-top-main{
+    font-weight: 800;
+    font-size: 22px;
+}
+
+.text-top-secondary{
+    font-size: 15px;
+    transition: ease-in-out 0.4s;
+}
+
+.links{
+    color: #fff;
+    text-decoration: none;
+}
+
+.links:hover{
+    text-decoration: underline;
+}
+
+/* Imagens */
+
+svg{
+    fill: #fff; /* Fill serve para mudar a cor de uma SVG*/
+}
+
+/* Botão */
+.btn{
+    padding: 25px 50px;
+    background-color: #00ffa5;
+    font-family: "JetBrains Mono", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Cards */
+.container-cards{
+    list-style: none;
+    padding-bottom: 32px;
+    display: flex;
+    gap: 10px;
+    /* flex-wrap: wrap; */
+}
+
+.cards{
+    border: 1px solid #808080;
+    padding: 15px;
+    width: 100%; /* Pega o cartão com maior tamanho e torna padrão */
+    display: flex;
+    flex-direction: column; /* Altera a direção do flex */
+    gap: 15px;
+}
+
+/* Modal */
+
+.modal[open]{
+    background-color: #191c1f;
+    color: #fff;
+    border: 2px solid #0000ff;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+}
+
+/* Escurecer a cor de fundo da página ao ativar a tag dialog(modal) */
+.modal::backdrop{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.header-modal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-closed-modal{
+    background-color: #343a40;
+    padding: 8px 12px;
+    color: #adb4bd;
+    cursor: pointer;
+}
+
+.input-modal{
+    padding: 14px 20px;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    font-family: "JetBrains Mono", sans-serif;
+    color: #fff;
+    outline: 2px #0000ff;
+}
+
+.btn-register{
+    padding: 10px 30px;
+    background-color: #00ffa5;
+    font-family: "JetBrains Mono", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Response */
+@media (max-width: 768px){
+    .container-cards{
+        flex-direction: column;
+    }
+
+    .title-main{
+        word-wrap: break-word;
+        font-size: 34px;
+    }
+    
+    .title-secondary{
+        font-size: 30px;
+    }
+    
+    .title-tertiary{
+        font-size: 26px;
+    }
+
+    .footer{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact{
+        gap: 16px;
+    }
+}
