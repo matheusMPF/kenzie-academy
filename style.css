@@ -78,7 +78,7 @@ section{
 
 @keyframes flicker {
     
-    24%, 45%, 55% {        
+    10%, 24%, 45% {        
         text-shadow: none;
     }    
   }
